@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learn-CS</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="Styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      .header {
+   padding: 20px;
+   height: fit-content;
+   text-align: center;
+  background: yellow;
+}
+table, th, td {
+  border: 1px solid black;
+  width: 10cm;
+}
+#r{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  width: 2cm;
+  height: 1.8cm;
+}
+    </style>
+    </head>
+    <body style="background-color:white; font-family: 'Times New Roman', Times, serif; " >
+      <div class="header" >
+    
+        <h4 >Study PlayGround</h4>
+        <p  id="intr" style="font-size: 11px"><small>Let's Study and Play to gain a skill</small> </p>
+        <img  id="r" src="gstu.jfif" alt="student logo">
+        </div>
+        <button class="btn btn-success" style="margin-left: 0cm;" onclick="g()">Back</button>
+        <h3 style="color: blue;font-weight: 560;font-family: 'Times New Roman', Times, serif; text-align: center;" class="text-left" >Computer Fundamentals-Ground</h3>
+       <div class=" text-left " style="margin-left: 1.5cm;margin-right: 1.5cm;font-size: 16.5px;">
+            <p>   Welcome to the Study Playground of Computer Fundamentals..Find below the topics to learn ...  </p>
+          <h6 style="color:red; font-weight: 546;">Syllabus for Test:</h6>
+          <img src="comp.jpg" style="width: 140px; height:160px;margin-left:3cm;" >
+         <div class="card" style="background-color: bisque;">
+            A computer is a programmable electronic device that accepts raw data as input and processes it with a set of instructions (a program) to produce the result as output. It renders output just after performing mathematical and logical operations and can save the output for future use. It can process numerical as well as non-numerical calculations. The term "computer" is derived from the Latin word "computare" which means to calculate.
+        </div>
+            More content to be loaded soon......
+
+
+
+           
+             </div>
+      
+
+    </body>
+    <script type='text/javascript'>
+      var isCtrl = false;
+      document.onkeyup=function(e)
+      {
+      if(e.which == 17)
+      isCtrl=false;
+      }
+      document.onkeydown=function(e)
+      {
+      if(e.which == 123)
+      isCtrl=true;
+      if (((e.which == 85) || (e.which == 65) || (e.which == 88) || (e.which == 67) || (e.which == 86) || (e.which == 2) || (e.which == 3) || (e.which == 123) || (e.which == 83)) && isCtrl == true)
+      {
+      alert('This Action is not allowed!!!');
+      return false;
+      }
+      }
+      // right click code
+      var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+      if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+      function mischandler(){
+          alert('This Action is not allowed!!!');
+      return false;
+      }
+      function mousehandler(e){
+      var myevent = (isNS) ? e : event;
+      var eventbutton = (isNS) ? myevent.which : myevent.button;
+      if((eventbutton==2)||(eventbutton==3)) return false;
+      }
+      document.oncontextmenu = mischandler;
+      document.onmousedown = mousehandler;
+      document.onmouseup = mousehandler;
+      //select content code disable  alok goyal
+      function killCopy(e){
+      return false
+      }
+      function reEnable(){
+      return true
+      }
+      document.onselectstart=new Function ("return false")
+      if (window.sidebar){
+      document.onmousedown=killCopy
+      document.onclick=reEnable
+      }
+      function g(){
+        window.location="welcome.html";
+      }
+      </script>
+    </html>

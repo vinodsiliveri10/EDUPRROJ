@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Main-test-page</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="Styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+   
+
+</head>
+    <body style="background-color:lemonchiffon;font-family: 'Times New Roman', Times, serif;">
+        <h4 style="font-weight: 550;font-size: 27px;">Study PlayGround</h4>
+        <h6 style="color: crimson;font-weight: 560;">NOTE:</h6><b>1.Please Click the END TEST Button only After SUBMITTING the below test.</b>If you click end test button before submitting the test,your score will become ZERO.
+       <p>2. Answer ALL the questions.MC Questions are 1 mark each.Short answer questions are of 2 marks each.
+      <br>3.The test link is active until 8:05 P.M(IST) , 23-12-2023.<br>
+      <b>4.There is no RE-ATTEMPT.Be alert.</b>
+       </p>
+       <button  class="btn btn-primary d-grid gap-2 col-3 mx-auto" id="sub" type="submit" style="position: relative;top:0cm ;font-weight: 540;" onclick="en()">END TEST</button>
+      
+       
+        <div class="card mx-auto" style="width: 78%; height:100%;">
+           
+            <div class="card-body scroll">
+              <h4  Style="font-weight:550; text-align: center;background-color: aqua;" class="card-title">Test Ground-1</h4>
+              <p class="card-text">Max.Marks: 10<br>Syllabus: (G.K,Mathematics,Computers)</p>
+              <form id="tform" name="ttf"  action="finish.html" method="post">
+               
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeaTmYpCBk8fWwGs46W0w-FePnR4pcio0wJNsSXQcbPqQxA2A/viewform?embedded=true" width="362" height="2000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            
+              </form>
+            </div>
+          </div>
+         
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript">
+            function preventBack() { window.history.forward(); }
+            setTimeout("preventBack()", 0);
+            window.onunload = function () { null };
+            function en(){
+              window.location="finish.html";
+            }
+          </script>
+          
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+         </body>
+        </html>
+        
