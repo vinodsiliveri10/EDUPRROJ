@@ -94,10 +94,6 @@ else {
 }
 }
 
-            function preventBack() { window.history.forward(); }
-            setTimeout("preventBack()", 0);
-            window.onunload = function () { null };
-          
 </script>
 <script type='text/javascript'>
   var isCtrl = false;
@@ -143,5 +139,10 @@ else {
   document.onmousedown=killCopy
   document.onclick=reEnable
   }
+  history.pushState(null, null, window.top.location.pathname + window.top.location.search);
+        window.addEventListener('popstate', (e) => {
+            e.preventDefault();
+            history.pushState(null, null, window.top.location.pathname + window.top.location.search);
+        });
   </script>
 </html>
