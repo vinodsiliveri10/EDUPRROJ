@@ -109,9 +109,11 @@ return false;
 }
 
      
-function preventBack() { window.history.forward(); }
-            setTimeout("preventBack()", 0);
-            window.onunload = function () { null };
+history.pushState(null, null, window.top.location.pathname + window.top.location.search);
+        window.addEventListener('popstate', (e) => {
+            e.preventDefault();
+            history.pushState(null, null, window.top.location.pathname + window.top.location.search);
+        });
 
     </script>
   </body>
