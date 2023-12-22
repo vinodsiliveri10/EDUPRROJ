@@ -24,9 +24,9 @@ body{
             </div>
             <div style="text-align: center;">
             <h6 Style="color: green; position:fixed; bottom:6cm;font-size:25px;">You have Successfully submitted the test.</h6>
-            <p style="color:blue; font-size: 21px;"> Thank you for attending the test...</p><br>
-            <p style="position: fixed;bottom: 0.7cm; right: 3%;font-weight: 540;"><b>Best Regards.,</b><br> Admin-Study PlayGround</p>
-            <h6 style="color:blue; font-size: 21px;">We will update you the Score in few minutes..</h6>
+            <p style="color:blue; font-size: 18px;"> Thank you for attending the test...</p><br>
+            <p style="position:fixed;bottom: 0.7cm; right: 3%;font-weight: 540;"><b>Best Regards.,</b><br> Admin-Study PlayGround</p>
+            <h6 style="color:blue; font-size: 17px;">We will update you the Score in few minutes..</h6><br><br>
             <button class="btn btn-primary" type="submit" onclick="fun()">LOGOUT</button>
         </div>
     </body>
@@ -35,8 +35,9 @@ body{
             window.location="index.html"
         }
        
-            function preventBack() { window.history.forward(); }
-            setTimeout("preventBack()", 0);
-            window.onunload = function () { null };
+            window.history.forward(); 
+        function noBack() { 
+            window.history.forward(); 
+        } 
     </script>
 </html>
