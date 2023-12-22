@@ -36,8 +36,10 @@ body{
         }
        
             window.history.forward(); 
-        function noBack() { 
-            window.history.forward(); 
-        } 
+      history.pushState(null, null, window.top.location.pathname + window.top.location.search);
+        window.addEventListener('popstate', (e) => {
+            e.preventDefault();
+            history.pushState(null, null, window.top.location.pathname + window.top.location.search);
+        }); 
     </script>
 </html>
